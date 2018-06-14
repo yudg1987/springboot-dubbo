@@ -5,6 +5,6 @@
 /target
 **.iml
 **log4j.xml
-*.zip
-*.gz
+/*.zip
+/*.gz
 
