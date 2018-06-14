@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/task
+       http://www.springframework.org/schema/task/spring-task.xsd">
+    <!-- 提供方应用信息，用于计算依赖关系 -->
+    <dubbo:application name="provider"/>
+    <!-- 注册中心服务地址 -->
+    <dubbo:registry id="zookeeper" protocol="zookeeper" address="zookeeper://localhost:21810"/>
+    <!-- 用dubbo协议在30001 -->
+    <!--<dubbo:protocol name="dubbo" port="30001" />-->
+    <!-- 声明需要暴露的服务接口 -->
+    <dubbo:service interface="com.boot.service.TestService" ref="testService"
+                   version="1.0" registry="zookeeper"/>
+    <!-- 具体服务接口的实现 -->
+    <bean id="testService" class="com.boot.service.impl.TestServiceImpl"/>
+
+
+    <!-- ================================事务相关控制================================================= -->
+    <!--<bean id="atomAopAdvisor" class="com.boot.aop.AtomServiceAopAdvisor"></bean>-->
+    <!-- 异常编码业务服务切面 -->
+    <bean id="busiAopAdvisor" class="com.boot.aop.BusiAopAdvisor">
+    </bean>
+
+
+    <bean name="dubboTransactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!-- 自动事务 -->
+    <tx:advice id="commodityTxAdvice" transaction-manager="dubboTransactionManager">
+        <tx:attributes>
+            <!-- 对insert,update,delete,register 开头的方法进行事务管理,只要有异常就回滚 -->
+            <tx:method name="create*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="register*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="update*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="delete*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="insert*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="add*" propagation="REQUIRED" rollback-for="java.lang.Throwable"/>
+            <tx:method name="modify*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="modity*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="save*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="cancel*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="change*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="notify*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="break*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="marking*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="execute*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="chng*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="lock*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="unlock*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="derate*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="calc*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="into*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="out*" propagation="REQUIRED" rollback-for="java.lang.Throwable"/>
+            <tx:method name="preempted*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="occupy*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="logout*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="reLogin*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="delayOcp*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="relSelection*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="relPreempted*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="exec*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="reconcile*" propagation="REQUIRED"
+                       rollback-for="java.lang.Throwable"/>
+            <tx:method name="del*" propagation="REQUIRED" rollback-for="java.lang.Throwable"/>
+            <!-- 对其他方法 使用默认的事务管理 -->
+            <tx:method name="*" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!-- 事务 aop 配置 -->
+    <aop:config>
+        <!-- 定义切入点 -->
+        <!-- 服务切入点 -->
+        <aop:pointcut id="commodityPcBusi"
+                      expression="(execution(* com.*.boot..service..*(..)))"/>
+
+
+        <!-- 业务层控制事务 -->
+        <aop:advisor pointcut-ref="commodityPcBusi" advice-ref="commodityTxAdvice"/>
+
+        <aop:aspect id="exceptionAspectBusi" ref="busiAopAdvisor">
+            <!-- <aop:around method="throwAopTreat" pointcut-ref="commodityPcBusi"/>-->
+        </aop:aspect>
+
+    </aop:config>
+
+    <!-- 启用对事务注解的支持 -->
+    <tx:annotation-driven transaction-manager="dubboTransactionManager"/>
+
+    <task:annotation-driven scheduler="qbScheduler" mode="proxy"/>
+    <task:scheduler id="qbScheduler" pool-size="10"/>
+</beans>

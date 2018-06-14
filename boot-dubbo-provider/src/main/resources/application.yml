@@ -1,0 +1,33 @@
+# 在这里编写springboot的配置信息
+server:
+  port: 8587
+  #context-path: /
+
+spring:
+  #数据源配置
+  datasource:
+    #url: jdbc:mysql://192.168.81.132:3306/dts?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://thewk.asuscomm.com:13306/dts?useUnicode=true&characterEncoding=utf8
+    username: dts
+    password: dts
+    driver-class-name: com.mysql.jdbc.Driver
+    #type: com.alibaba.druid.pool.DruidDataSource
+    connectionProperties: druid.stat.mergeSql=true
+  #模板引擎
+  freemarker:
+    #关闭缓存
+    cache: false
+    request-context-attribute: request
+    #模板加载的位置
+    template-loader-path: classpath:/templates
+    #前缀
+    suffix: .htm
+    #后缀
+    prefix: /htm/
+
+mybatis:
+  #实体类所做包
+  type-aliases-package: com.boot.bo
+  #mapper.xml所在位置
+  mapper-locations: classpath:mapper/*.xml
+  config-locations: classpath:mybatis-config.xml

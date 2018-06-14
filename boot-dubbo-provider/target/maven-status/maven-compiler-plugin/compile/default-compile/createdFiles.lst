@@ -1,0 +1,7 @@
+com\boot\page\MyBatisConfiguration.class
+com\boot\service\impl\TestServiceImpl.class
+com\boot\task\WebTask.class
+com\boot\mapper\ToClickHouseMapper.class
+com\boot\ProviderApplication.class
+com\boot\bo\ToClickHouse.class
+com\boot\bo\ToClickHouseWithBLOBs.class
