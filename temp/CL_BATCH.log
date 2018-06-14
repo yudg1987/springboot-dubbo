@@ -9136,3 +9136,85 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1
 2018-06-14 09:38:06,195 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
 2018-06-14 09:38:16,197 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
 2018-06-14 09:38:26,198 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:38:32,237 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:38:36,198 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:38:46,199 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:38:56,201 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:39:02,239 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:39:06,203 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:39:16,204 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:39:26,206 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:39:32,240 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:39:36,209 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 1ms
+2018-06-14 09:39:46,207 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:39:56,209 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:40:02,241 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:40:06,227 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 16ms
+2018-06-14 09:40:16,212 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:40:26,224 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 11ms
+2018-06-14 09:40:32,242 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:40:36,214 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:40:46,214 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:40:56,215 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:41:02,243 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:41:06,217 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:41:16,218 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:41:26,220 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:41:32,245 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:41:36,222 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:41:46,222 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:41:56,224 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:42:02,246 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:42:06,223 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:42:16,225 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:42:26,226 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:42:32,247 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:42:36,228 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:42:46,229 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:42:56,232 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:43:02,249 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:43:06,233 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:43:16,234 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:43:26,233 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:43:32,250 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:43:36,234 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:43:46,234 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:43:56,237 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:44:02,251 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:44:06,236 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:44:16,238 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:44:26,238 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:44:32,252 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:44:36,238 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:44:46,238 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:44:56,238 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:45:02,253 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:45:06,238 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:45:16,239 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:45:26,240 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:45:32,253 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:45:36,241 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:45:46,242 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:45:56,242 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:46:02,255 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:46:06,242 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:46:16,242 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:46:26,243 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:46:32,256 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:46:36,243 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:46:46,245 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:46:56,245 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:47:02,257 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:47:06,245 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:47:16,246 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:47:26,246 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:47:32,258 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:47:36,247 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:47:46,248 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:47:56,248 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:48:02,258 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:48:06,248 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:48:16,249 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:48:26,249 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
+2018-06-14 09:48:32,260 DEBUG c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2018-06-14 09:48:36,249 DEBUG o.a.z.ClientCnxn$SendThread [main-SendThread(jmenv.tbsite.net:2181)] Got ping response for sessionid: 0x163fbebfc930020 after 0ms
