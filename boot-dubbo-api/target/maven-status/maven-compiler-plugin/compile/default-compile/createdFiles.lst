@@ -1,7 +1,0 @@
-com\boot\cache\CacheService.class
-com\boot\domain\User.class
-com\boot\aop\BusiAopAdvisor.class
-com\boot\bo\ToClickHouseBo.class
-com\boot\base\ReqPageBO.class
-com\boot\service\TestService.class
-com\boot\cache\CacheExecuterService.class
