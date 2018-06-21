@@ -1,6 +1,6 @@
 # 在这里编写springboot的配置信息
 server:
-  port: 8587
+  port: 9002
   #context-path: /
 
 spring:
